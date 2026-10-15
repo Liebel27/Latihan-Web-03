@@ -4,24 +4,25 @@
 <head>
     <title>Latihan Web 3</title>
     <link rel="stylesheet" href="desain.css">
+</head>
 
 <body>
 
     <div class="header">
         <div class="logo">Logo</div>
         <div class="menu">
-            <div> Home</div>
-            <div> Service</div>
-            <div> About</div>
-            <div> Contact</div>
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </div>
     </div>
 
-    <div class="hero">
+    <div class="hero" id="home">
         Hero (Image, Slogan, Kontak, dll)
     </div>
 
-    <div class="bungkus">
+    <div class="bungkus" id="service">
         <div class="Services">Services</div>
         <div class="Heading">
             <div class="Heading1">
@@ -55,52 +56,56 @@
 
     </div>
 
-<div class="bungkus-About">
+    <div class="bungkus-About" id="about">
 
-    <div class="About">About</div>
+        <div class="About">About</div>
 
-    <p class="deskripsi-About">
-        Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit, sed do eiusmod
-    </p>
+        <p class="deskripsi-About">
+            Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod
+        </p>
 
-    <div class="isi-About">
+        <div class="isi-About">
+            <div class="Heading-About">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div class="Performance">
+                <h1>Performance</h1>
 
-        <div class="Heading-About">
-            <h1>Heading</h1>
-            <p>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua.
-            </p>
-        </div>
-
-        
-
-
-<div class="Performance">
-    <h1>Performance</h1>
-
-    <svg class="grafik" viewBox="0 0 220 100"
-         xmlns="http://www.w3.org/2000/svg">
-
-        <path
-            d="M 5 20
+                <svg class="grafik" viewBox="0 0 220 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M 5 20
                C 40 42, 65 42, 100 22
                C 135 0, 165 0, 215 20
                L 215 80
                C 175 58, 145 58, 115 78
                C 80 100, 45 100, 5 80
-               Z"
-            fill="white"
-            stroke="#555555"
-            stroke-width="1.5"
-        />
+               Z" fill="white" stroke="#555555" stroke-width="1.5" />
 
-    </svg>
-</div>
+                </svg>
+            </div>
+        </div>
+    </div>
 
+    <div class="bungkus-Contact" id="contact">
+        <div class="Contact">Contact</div>
+        <div class="input-Contact">
+            <input type="text" placeholder="Enter your Name">
+            <input type="email" placeholder="Enter your Email">
+        </div>
+        <input type="text" class="Pesan-Contact" placeholder="masukkan pesan anda">
+        <button class="Kirim">
+            Kirim
+        </button>
+    </div>
+    <div class="bungkus-Footer">
+        <div class="Footer">Footer</div>
+    </div>
 </body>
 
 </html>
